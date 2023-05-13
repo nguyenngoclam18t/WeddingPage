@@ -45,7 +45,7 @@
 .about{
     justify-content: center;
     display: flex;
-    height: 100vh;
+    height: 130vh;
 }
 .content-about{
     width: 60%;
@@ -142,9 +142,7 @@
     align-items: center;
     flex-direction: column;
 }
-.margintop{
-    margin: 50px 0 20px 0;
-}
+
 .titel h1::after{
     content: "__";
     color: black;
@@ -241,7 +239,7 @@
 }
 footer{
     
-    height: 25vh;
+    height: 30vh;
    box-shadow: -1px -1px 1px ;
    background:  url("../image/bgfooter.jpg") top center/cover no-repeat;
  
