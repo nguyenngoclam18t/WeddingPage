@@ -9,7 +9,7 @@ function slideShows(i){
 window.onscroll=function(){
     var rectHeader=showHeader.getClientRects()[0];
 
-    if(rectHeader.y!=0){
+    if(rectHeader.y<=-40){
         document.querySelector("#head").classList.add("turnOnHeader");
     }else{
         document.querySelector("#head").classList.remove("turnOnHeader");
@@ -34,4 +34,3 @@ function mouseOverNav(i) {
     })
 
   }
-
