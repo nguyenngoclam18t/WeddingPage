@@ -34,3 +34,25 @@ function mouseOverNav(i) {
     })
 
   }
+document.querySelector("#iconMenuMobile").addEventListener("click",()=>{
+    var menu=document.querySelector("#menuForMobile");
+    if(menu.classList.contains("blockMenu")){
+        menu.classList.remove("blockMenu");
+    }else{
+        menu.classList.add("blockMenu");
+    }
+})
+function mouseOverNavMenu(i) {
+    document.querySelectorAll(".checkunder").forEach((element,index)=>{
+        if(index==i){
+            element.classList.add("underScoreWhite")
+    }
+
+    })  }
+  
+  function mouseOutNavMenu(i) {
+    document.querySelectorAll(".checkunder").forEach((element,index)=>{
+        if(index==i){element.classList.remove("underScoreWhite")}
+    })
+
+  }

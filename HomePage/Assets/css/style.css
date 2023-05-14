@@ -32,20 +32,20 @@
 }
 .slide-show h2{
 
-    top: 50%;
+    top: 55%;
     left: 50%;
     font-size: 50px;
 
 }
 .slide-show img{
-    top: 60%;
+    top: 74%;
     left: 50%;
     font-size: 50px;
 }
 .about{
     justify-content: center;
     display: flex;
-    height: 130vh;
+    height: auto;
 }
 .content-about{
     width: 60%;
@@ -174,7 +174,7 @@
     height: 500px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 30px;
@@ -236,16 +236,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-footer{
-    
-    height: 30vh;
-   box-shadow: -1px -1px 1px ;
-   background:  url("../image/bgfooter.jpg") top center/cover no-repeat;
- 
-   color: #3d3d3d;
-}
-footer div{
-    margin-top: 30px;
-    
 }

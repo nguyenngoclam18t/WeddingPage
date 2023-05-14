@@ -1,0 +1,99 @@
+@media screen and (min-width: 740px)and (max-width: 1023px) {
+    .slide-show{
+        height: 50vh;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .slide-show img{
+        width: 470px;
+
+        height: auto;
+    }
+    .about{
+        height: 100vh;
+    }
+    .product {
+        width: 50%;
+    }
+    .list-Product {
+        flex-wrap: wrap;
+        height: auto;
+    }
+  }
+@media screen and (max-width: 740px) {
+    .slide-show{
+        height: 50vh;
+    }
+    .product {
+        width: 70%;
+    }
+    .list-Product {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    h1{
+        font-size: 37px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    .slide-show img{
+        width: 254px !important;
+
+        height: auto;
+    }
+    .slide-show h1{
+ 
+        top: 40%;
+    }
+    .slide-show h2{
+    
+        top: 50%;
+    }
+    .slide-show img{
+        top: 60%;
+    }
+
+    .titel{
+        margin: 20px 0;
+    }
+    .titel h1{
+       font-size: 20px;
+    
+    }
+    .titel h1::after{
+        content: "";
+
+    }
+    .titel h1::before{
+        content: "";
+
+    }
+    .container-galley::after,.container-galley::before{
+        content: "";
+        width: 0;
+        height: 0;
+    }
+    .achievement h1{
+        font-size: 20px !important;
+    }
+    .achievement p{
+        font-size: 10px;
+    }
+    .achievement h3{
+        font-size: 15px;
+    }
+    .achievement{
+        height: 50vh;
+    }
+    #iconMenuMobile,#menuForMobile{
+        display: block;
+    }
+    #head{
+        display: none;
+    }
+  }
