@@ -90,7 +90,7 @@ footer div{
     height: 100vh !important;
     background-color: #fadce3e2; 
     position: fixed ;
-    transform: translateX(-500px);
+    transform: translateX(-1000px);
     z-index: 2;
     transition: 0.3s;
     cursor: pointer;
