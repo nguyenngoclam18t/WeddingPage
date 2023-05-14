@@ -60,7 +60,7 @@ var Listcounter = document.querySelectorAll(".counter");
 function counter(el) {
   let to = parseInt(el.innerText);
   let count = 0;
-  let time = 250;
+  let time = 2000;
   let step = to / time;
   let counting = setInterval(() => {
     count += step;
