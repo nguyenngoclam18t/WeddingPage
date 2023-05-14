@@ -88,7 +88,7 @@ footer div{
     display: none;
     width: 100%;
     height: 100vh !important;
-    background-color: #ffdde5; 
+    background-color: #fadce3e2; 
     position: fixed ;
     transform: translateX(-500px);
     z-index: 2;

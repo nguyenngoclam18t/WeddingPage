@@ -56,3 +56,22 @@ function mouseOverNavMenu(i) {
     })
 
   }
+var Listcounter = document.querySelectorAll(".counter");
+function counter(el) {
+  let to = parseInt(el.innerText);
+  let count = 0;
+  let time = 250;
+  let step = to / time;
+  let counting = setInterval(() => {
+    count += step;
+    if (count > to) {
+      clearInterval(counting);
+      el.innerText = to;
+    } else {
+        el.innerText = Math.ceil(count);
+    }
+  }, 1);
+}
+Listcounter.forEach((element) => {
+  counter(element);
+});
