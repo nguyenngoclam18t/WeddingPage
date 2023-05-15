@@ -12,62 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <header id="head">
-        <ul class="nav d-flex justify-content-center">
-            <li class="nav-item " onmouseover="mouseOverNav(0)" onmouseout="mouseOutNav(0)" >
-                <a href="#" class="nav-link"> Trang Chủ</a>
-                <span></span>
-            </li>
-            <li class="nav-item"onmouseover="mouseOverNav(1)" onmouseout="mouseOutNav(1)"> 
-                <a href="#" class="nav-link"> Sản Phẩm</a>
-                <span></span>
-            </li>
-            <li class="nav-item"onmouseover="mouseOverNav(2)" onmouseout="mouseOutNav(2)"> 
-                <a href="#" class="nav-link"> Review </a>
-                <span></span>
-            </li>
-            <li class="nav-item"onmouseover="mouseOverNav(3)" onmouseout="mouseOutNav(3)"> 
-                <a href="#" class="nav-link"> Địa chỉ</a>
-                <span></span>
-            </li>
-
-            <li class="nav-item"onmouseover="mouseOverNav(4)" onmouseout="mouseOutNav(4)"> 
-                <a href="#" class="nav-link"> Login|Register</a>
-                <span></span>
-            </li>
-        </ul>
-    </header>
-    <div id="iconMenuMobile">
-        <i class="fa-solid fa-bars"></i>
+    <div id="header">
     </div>
-    <div id="menuForMobile" >
-        <div id="contentMenuMobile" >
-            <ul class="p-0 text-center">
-                <li class="nav-item checkunder  " onmouseover="mouseOverNavMenu(0)" onmouseout="mouseOutNavMenu(0)" >
-                    <a href="#" class="nav-link"> Trang Chủ</a>
-                    <span></span>
-                </li>
-                <li class="nav-item checkunder" onmouseover="mouseOverNavMenu(1)" onmouseout="mouseOutNavMenu(1)"> 
-                    <a href="#" class="nav-link"> Sản Phẩm</a>
-                    <span></span>
-                </li>
-                <li class="nav-item checkunder" onmouseover="mouseOverNavMenu(2)" onmouseout="mouseOutNavMenu(2)"> 
-                    <a href="#" class="nav-link"> Review </a>
-                    <span></span>
-                </li>
-                <li class="nav-item checkunder" onmouseover="mouseOverNavMenu(3)" onmouseout="mouseOutNavMenu(3)"> 
-                    <a href="#" class="nav-link"> Địa chỉ</a>
-                    <span></span>
-                </li>
-    
-                <li class="nav-item checkunder"onmouseover="mouseOverNavMenu(4)" onmouseout="mouseOutNavMenu(4)"> 
-                    <a href="#" class="nav-link"> Login|Register</a>
-                    <span></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
     <div class="containers">
         <div class="slide-show">
             <h1>Wedding Page</h1>
@@ -213,29 +159,14 @@
 
         </div>
     </div>
-    <footer class=" d-lg-flex d-md-flex justify-content-sm-start  justify-content-md-around justify-content-xl-around">
-        <div>
-            <h5>THÔNG TIN LIÊN HỆ</h5>
-           
-            <p><span>  <i class="fa-solid fa-phone-volume"></i></span> 0123456789</p>
-            <p><span> <i class="fa-solid fa-envelope"></i></span> nguyenngoclam2k3d@gmail.com</p>
-            <p><span> <i class="fa-solid fa-location-dot"></i></span> 140 Lê Trọng Tấn, Tân Phú, Tp HCM</p>
-        </div>
-        <div >
-            <h5>HƯỚNG DẪN MUA HÀNG</h5>
-            <p><span>  <i class="fa-solid fa-house"></i></span> Trang chủ</p>
-            <p><span><i class="fa-solid fa-message"></i></span> Hỗ trợ</p>
-            <p><span> <i class="fa-solid fa-bag-shopping"></i></span> Sản Phẩm</p>
-        </div>
-        <div>
-            <h5>Các Nền Tảng</h5>
-            <p><span>  <i class="fa-brands fa-facebook"></i></span>  Facebook</p>
-            <p><span><i class="fa-brands fa-instagram"></i></span> Instagram</p>
-            <p><span> <i class="fa-brands fa-youtube"></i></span> youtube</p>
-        </div>
-    </footer>
-
+   <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $("#footer").load("./HomePage/Assets/headerFooter/footer.html");
+        $("#header").load("./HomePage/Assets/headerFooter/header.html");
+    </script>
     <script src="./HomePage/Assets/js/app.js"></script>
+    <script src="./HomePage/Assets/js/headerFooter.js"></script>
 
 </body>
 </html>

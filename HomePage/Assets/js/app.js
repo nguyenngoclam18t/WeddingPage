@@ -6,16 +6,7 @@ function slideShows(i){
    slide.style.backgroundImage=`linear-gradient(rgba(0, 0, 0, 0.2),
    rgba(0, 0, 0, 0.2)), url(${listImg[i]})`;
 }
-window.onscroll=function(){
-    var rectHeader=showHeader.getClientRects()[0];
 
-    if(rectHeader.y<=-40){
-        document.querySelector("#head").classList.add("turnOnHeader");
-    }else{
-        document.querySelector("#head").classList.remove("turnOnHeader");
-    }
-
-}
 
 setInterval(()=>{
     if(currentIndex==listImg.length)currentIndex=0;
@@ -28,34 +19,6 @@ function mouseOverNav(i) {
 
     })  }
   
-  function mouseOutNav(i) {
-    document.querySelectorAll(".nav-item").forEach((element,index)=>{
-        if(index==i){element.classList.remove("underScore")}
-    })
-
-  }
-document.querySelector("#iconMenuMobile").addEventListener("click",()=>{
-    var menu=document.querySelector("#menuForMobile");
-    if(menu.classList.contains("blockMenu")){
-        menu.classList.remove("blockMenu");
-    }else{
-        menu.classList.add("blockMenu");
-    }
-})
-function mouseOverNavMenu(i) {
-    document.querySelectorAll(".checkunder").forEach((element,index)=>{
-        if(index==i){
-            element.classList.add("underScoreWhite")
-    }
-
-    })  }
-  
-  function mouseOutNavMenu(i) {
-    document.querySelectorAll(".checkunder").forEach((element,index)=>{
-        if(index==i){element.classList.remove("underScoreWhite")}
-    })
-
-  }
 var Listcounter = document.querySelectorAll(".counter");
 function counter(el) {
   let to = parseInt(el.innerText);
@@ -75,3 +38,4 @@ function counter(el) {
 Listcounter.forEach((element) => {
   counter(element);
 });
+
