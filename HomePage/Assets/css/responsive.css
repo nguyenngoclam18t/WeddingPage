@@ -91,7 +91,7 @@
         height: 50vh;
     }
     #iconMenuMobile,#menuForMobile{
-        display: block;
+        display: block !important;
     }
     #head{
         display: none;

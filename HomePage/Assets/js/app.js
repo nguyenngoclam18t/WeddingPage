@@ -6,8 +6,6 @@ function slideShows(i){
    slide.style.backgroundImage=`linear-gradient(rgba(0, 0, 0, 0.2),
    rgba(0, 0, 0, 0.2)), url(${listImg[i]})`;
 }
-
-
 setInterval(()=>{
     if(currentIndex==listImg.length)currentIndex=0;
     slideShows(currentIndex);

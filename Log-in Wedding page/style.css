@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+.wrapper{
+    background: url(./image/anhnen.jpg) top center/cover no-repeat;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    position: relative;
+}
+.side-image{
+    background-image: url("./image/a1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+img{
+    position: absolute;
+    top: 15px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 18px;
+}
+h3{
+    text-align: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    position: relative;
+}
+.sign-up-box{
+    width: 330px;
+    box-sizing: border-box;
+    display: block;
+    transform: translateY(-1000px);
+    transition: all 1s linear;
+    position: absolute;
+     
+}
+.sign-up-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.sign-up-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.sign-up{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.sign-up-box .sign-up-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.sign-up-field .sign-up:focus ~ label{
+    top: -10px;
+    font-size: 18px;
+}
+.sign-up-field .sign-up:valid ~ label{
+    top: -10px;
+    font-size: 18px;
+}
+.sign-up-field .sign-up:focus, .sign-up-field .sign-up:valid{
+    border-bottom: 1px solid #d56e84;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #eeb8c4;
+    border-radius: 5px;
+    transition: .4s;
+}
+.submit:hover{
+    background: #d3788b;
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+.sign-in-box{
+    width: 330px;
+    box-sizing: border-box;
+    display: block;
+    transform: translateY(-1000px);
+    transition: all 1s linear;
+    position: relative;
+}
+.sign-in-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.sign-in-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.sign-in{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.sign-in-box .sign-in-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    
+}
+.sign-in-field .sign-in:focus ~ label{
+    top: -10px;
+    font-size: 18px;
+}
+.sign-in-field .sign-in:valid ~ label{
+    top: -10px;
+    font-size: 18px;
+}
+.sign-in-field .sign-in:focus, .sign-in-field .sign-in:valid{
+    border-bottom: 1px solid #d56e84;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #eeb8c4;
+    border-radius: 5px;
+    transition: .4s;
+}
+.submit:hover{
+    background: #d3788b;
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: 20px;
+}
+.signup{
+    text-align: center;
+    font-size: 20px;
+}
+.button1{
+    background-color: #eeb8c4;
+    border-radius: 5px;
+    width: 95%;
+    height: 45px;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.button1:hover{
+    background: #d3788b;
+    color: #fff;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.col-md-6.right{
+    overflow: hidden;
+}
+@media only screen and (max-width: 765px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+        display: none;
+    }
+    .sign-up-box,.sign-in-box {
+        width: 260px;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%; 
+    }
+
+}
+.onModal{
+    display:block !important;
+    transform: translateY(0) ;
+}
