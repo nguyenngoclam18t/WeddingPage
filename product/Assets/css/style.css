@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+:root{
+    --primaryColor:#d56e84;
+    --secondaryColor:#eaeaea;
+}
+
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* slideshow */
+.slideS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #fff;
+    width: 100%;
+    margin-top: -20px;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 15s linear infinite;
+    animation-play-state: running;
+    background: url('../image/nhancuoi.jpg');
+    background-color: transparent;
+
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) *60deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 100%;
+    height: 100%;
+}
+
+.box span img:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.box:hover{
+    animation-play-state: paused;
+}
+.setting{
+    /* height: 250px; */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes animate{
+    0%{
+        transform: perspective(1500px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1500px) rotateY(360deg);
+    }
+}
+/* slideshow */
+
+
+/* card */
+.card{
+    transition: all 0.4s ease;
+    margin-bottom: 10px !important;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid black;
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+ul{
+    list-style-type: none;
+}
+.detail li::before{
+    color: rgb(167, 255, 79);
+    content: "✔";
+    margin-right: 10px;
+}
+/* card */
+
+/* popup */
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 1rem;
+    max-width: 22rem;
+    min-height: 50%;
+    background-clip: padding-box;
+    border-radius: 20px;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 1), 0 6px 40px 0 rgba(0, 0, 0, 1);
+ }
+/*  
+ .products-preview .preview::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -10px;
+    border-radius: inherit;
+    background-image: linear-gradient(to right bottom,#ffa400,#ff6bcb);
+
+ } */
+
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ 
+ .products-preview .preview img{
+    max-height: 18rem;
+ }
+ 
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 2rem;
+ }
+ 
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+ 
+ .products-preview .preview h3{
+    color:#444;
+    padding:.5rem 0;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+ }
+ 
+ 
+ .products-preview .preview p{
+    line-height: 1.3;
+    font-size: 1rem;
+    color:#777;
+ }
+ 
+ .products-preview .preview .price{
+    font-size: 2rem;
+    color:#27ae60;
+ }
+
+/* popup */
+
+footer{ 
+    
+    height: 30vh;
+    box-shadow: -1px -1px 1px ;
+    background:  url("../image/bgfooter.jpg") top center/cover no-repeat;
+ 
+   color: #3d3d3d;
+}
+footer div{
+    margin-top: 30px;
+    
+}
+
+@media (min-width:451px) and (max-width:758px)
+{
+    .box span{
+        transform: rotateY(calc(var(--i) *60deg)) translateZ(150px);
+    }
+}
+ 
+@media (max-width:450px)
+{
+
+    html{
+        font-size: 60%;
+    }
+    .products-preview{
+        max-width: 100%;
+    }
+    .box span{
+        transform: rotateY(calc(var(--i) *60deg)) translateZ(120px);
+    }
+    @keyframes animate{
+        0%{
+            transform: perspective(3000px) rotateY(0deg);
+        }
+        100%{
+            transform: perspective(3000px) rotateY(360deg);
+        }
+    }
+
+ 
+ }
+
+
